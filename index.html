@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanvex — Sistemas a la medida</title>
+<meta name="description" content="Lanvex desarrolla sistemas web a la medida para consultorios, comercios y equipos de trabajo. Catálogo con demos navegables de cada proyecto.">
+<meta name="author" content="Kevin Landaverde">
+<meta property="og:title" content="Lanvex — Sistemas a la medida">
+<meta property="og:description" content="Catálogo de sistemas con demos navegables: expediente clínico, gestión y más.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2338BDF8'/><text x='16' y='23' font-family='sans-serif' font-size='19' font-weight='bold' text-anchor='middle' fill='%2306121C'>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="Lanvex, inicio">
+      <span class="brand__mark">L</span>
+      <span class="brand__name">Lanvex<span>.dev</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Qué construyo</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a class="btn btn--primary btn--sm" href="#contacto">Cotizar mi sistema</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <span class="hero__tag"><b>Lanvex</b> Software a la medida</span>
+      <h1>Sistemas que la gente <em>sí usa</em> todos los días.</h1>
+      <p class="hero__lead">
+        Diseño y desarrollo sistemas para consultorios, negocios y equipos que
+        siguen trabajando con cuadernos, hojas de cálculo y folders. Abajo está
+        el catálogo: cada proyecto tiene una demo que puedes recorrer ahora mismo,
+        sin registrarte.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#proyectos">
+          Ver el catálogo
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#contacto">Hablar de mi proyecto</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num">100%</div>
+          <div class="stat__label">Hecho a la medida</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Demo</div>
+          <div class="stat__label">Antes de contratar</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Web</div>
+          <div class="stat__label">PC, tablet y celular</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mockup decorativo -->
+    <div class="window" aria-hidden="true">
+      <div class="window__bar">
+        <span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span>
+        <span class="window__url">lanvex.dev / expediente-clinico</span>
+      </div>
+      <div class="window__body">
+        <div class="window__row">
+          <div class="window__avatar">MG</div>
+          <div><div class="window__line" style="width:62%"></div><div class="window__line window__line--sm"></div></div>
+          <span class="window__pill">Activo</span>
+        </div>
+        <div class="window__row">
+          <div class="window__avatar">JR</div>
+          <div><div class="window__line" style="width:48%"></div><div class="window__line window__line--sm"></div></div>
+          <span class="window__pill window__pill--warn">Control</span>
+        </div>
+        <div class="window__row">
+          <div class="window__avatar">AL</div>
+          <div><div class="window__line" style="width:70%"></div><div class="window__line window__line--sm"></div></div>
+          <span class="window__pill">Activo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATÁLOGO ===================== -->
+<section id="proyectos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Proyectos realizados</h2>
+      <p>
+        Cada tarjeta es un sistema real. Las demos son versiones navegables con
+        datos de ejemplo: puedes abrirlas, buscar, entrar a un registro y ver
+        cómo se siente el sistema antes de pedir el tuyo.
+      </p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filtrar proyectos">
+      <button class="filter" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button class="filter" data-filtro="salud" aria-pressed="false">Salud</button>
+      <button class="filter" data-filtro="gestion" aria-pressed="false">Gestión</button>
+      <button class="filter" data-filtro="web" aria-pressed="false">Web</button>
+      <button class="filter" data-filtro="individual" aria-pressed="false">Individuales</button>
+      <button class="filter" data-filtro="grupal" aria-pressed="false">Grupales</button>
+    </div>
+
+    <div class="grid" id="catalogo"></div>
+    <p id="sinResultados" class="card__note" hidden>No hay proyectos en esta categoría todavía.</p>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Qué construyo</span>
+      <h2>Del cuaderno al sistema</h2>
+      <p>No vendo plantillas. Primero entiendo cómo trabajas hoy y luego construyo el sistema alrededor de eso.</p>
+    </div>
+
+    <div class="services">
+      <div class="service reveal">
+        <div class="service__icon">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 8h-1V6a6 6 0 1 0-12 0v2H5a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Z"/><path d="M12 13v3"/></svg>
+        </div>
+        <h3>Expedientes e historiales</h3>
+        <p>Consultorios, clínicas y despachos: toda la información de cada persona ordenada y encontrable en segundos.</p>
+      </div>
+
+      <div class="service reveal">
+        <div class="service__icon">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        </div>
+        <h3>Agendas y citas</h3>
+        <p>Control de citas, recordatorios y disponibilidad, sin dobles reservaciones ni llamadas de confirmación.</p>
+      </div>
+
+      <div class="service reveal">
+        <div class="service__icon">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        </div>
+        <h3>Inventario y reportes</h3>
+        <p>Existencias, movimientos y cortes. Los números que hoy sacas a mano, listos cuando los necesitas.</p>
+      </div>
+
+      <div class="service reveal">
+        <div class="service__icon">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Sitios y portales</h3>
+        <p>Presencia web que sí convierte: rápida, clara y conectada con el sistema que ya usas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE MÍ ===================== -->
+<section id="sobre-mi">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="eyebrow">Sobre mí</span>
+      <h2>Kevin Landaverde</h2>
+      <p style="color:var(--text-muted)">
+        Desarrollador de software. Lanvex es la marca con la que trabajo mis
+        proyectos: sistemas pensados para personas que no son técnicas, con
+        pantallas simples y flujos que se entienden sin manual.
+      </p>
+      <p style="color:var(--text-muted)">
+        Algunos proyectos del catálogo los desarrollé solo y otros en equipo;
+        cuando fue trabajo grupal está indicado en la tarjeta correspondiente.
+      </p>
+    </div>
+
+    <div class="about__card reveal">
+      <ul class="about__list">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b style="color:var(--text)">Demo primero.</b> Ves el sistema funcionando antes de decidir.</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b style="color:var(--text)">A tu medida.</b> El sistema se adapta a tu forma de trabajar, no al revés.</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b style="color:var(--text)">Capacitación incluida.</b> Te enseño a usarlo hasta que fluya.</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b style="color:var(--text)">Soporte después de entregar.</b> Acompañamiento y ajustes posteriores.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow" style="justify-content:center">Contacto</span>
+      <h2>¿Te late algo del catálogo?</h2>
+      <p>
+        Cuéntame cómo llevas hoy tu información y te digo qué se puede automatizar,
+        cuánto tardaría y cuánto costaría. La primera plática no tiene costo.
+      </p>
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="mailto:landaverde.kevin04@gmail.com?subject=Quiero%20un%20sistema%20con%20Lanvex">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          Escribirme por correo
+        </a>
+        <a class="btn" href="https://wa.me/50375398582?text=Hola%20Kevin%2C%20vi%20el%20cat%C3%A1logo%20de%20Lanvex" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.87 9.87 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.84-.85 2.04s.87 2.37 1 2.53c.12.17 1.72 2.62 4.16 3.68.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© <span id="anio">2026</span> Lanvex — Kevin Landaverde</span>
+    <span>Catálogo construido con HTML, CSS y JavaScript</span>
+  </div>
+</footer>
+
+<script src="assets/data/projects.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
