@@ -19,11 +19,11 @@ assets/
   js/site.js                      Menú, filtros del catálogo, animaciones
   data/projects.js                ← Lista de proyectos del catálogo
 demos/
-  expediente-clinico/             Demo 1: módulo de expediente clínico
+  sistema-clinica/                Demo 1: sistema de gestión clínica
     index.html
     css/app.css
-    js/data.js                    Pacientes de ejemplo (ficticios)
-    js/app.js                     Lógica del módulo
+    js/data.js                    Pacientes, personal y cola (ficticios)
+    js/app.js                     Lógica de la demo
 ```
 
 ## Cómo verlo
@@ -65,49 +65,59 @@ muestra la etiqueta **"Proyecto grupal"** automáticamente.
 
 ---
 
-## Demo incluida: Expediente Clínico (`demos/expediente-clinico/`)
+## Demo incluida: Sistema de Gestión Clínica (`demos/sistema-clinica/`)
 
-Módulo de expediente para un consultorio médico. Es la versión **básica a
-propósito**: muestra lo esencial bien resuelto para que el cliente entienda el
-valor y pregunte por el resto.
+Reproducción navegable del sistema web interno que desarrollé **en equipo para
+Clínica ProSalud** (Django + PostgreSQL). La demo es estática —HTML, CSS y
+JavaScript— pero respeta la identidad visual real (paleta "Verde salud"), la
+estructura de pantallas y, sobre todo, el flujo de trabajo del sistema
+entregado.
 
 **Lo que el visitante puede hacer:**
 
-- Ver la lista de pacientes, buscarlos por nombre o expediente (funciona aunque
-  escriba sin tildes) y filtrarlos por estado o por alergias.
-- Abrir un expediente y recorrer sus cinco pestañas: resumen, antecedentes,
-  consultas, recetas y estudios.
-- Leer los signos vitales con su interpretación automática (presión, IMC y
-  glucosa se marcan en ámbar o rojo cuando salen de rango).
-- Ver la gráfica de evolución de peso, presión, glucosa o frecuencia cardiaca,
-  con el dato exacto al pasar el cursor o tocar la pantalla.
-- **Registrar una consulta nueva**: la nota aparece en el historial y sus signos
-  vitales se suman a la gráfica al instante.
-- **Crear un expediente nuevo** desde cero.
-- Abrir una receta con formato imprimible (el botón *Imprimir* saca solo la
-  hoja de receta, sin el resto de la pantalla).
+- **Cambiar de rol** desde la barra superior: Enfermera, Doctor y Doctora
+  Administradora. Cambian el menú, las acciones disponibles y lo que se ve en
+  cada pantalla, igual que con los permisos del sistema real.
+- Buscar pacientes por nombre, DUI o teléfono (funciona sin tildes y por
+  palabras sueltas, por los nombres compuestos).
+- Registrar un paciente adulto o menor de edad: la **edad real** decide si se
+  exige responsable, no el interruptor de la pantalla.
+- Abrir un expediente: cabecera con contactos, antecedentes, controles
+  pendientes y últimos signos vitales, más el panel de tarjetas del historial.
+- **Registrar la preconsulta** (enfermería): signos vitales, IMC calculado en
+  vivo para menores, y elegir a qué médico se manda, viendo cuántos pacientes
+  tiene cada uno en espera.
+- **Administrar la cola**: tablero con la cola de cada médico, reasignar a otro
+  médico, marcar emergencia con motivo obligatorio y registrar el retiro de un
+  paciente que se fue antes de pasar.
+- **Atender la consulta** (médico): ve solo su propia cola, con el siguiente
+  paciente destacado; nota clínica con campos separados y preguardado
+  automático.
+- **Emitir la receta**, que es la que cierra la consulta: sale con el membrete
+  de la clínica, su folio y la firma, lista para imprimir.
+- Cambiar de clínica (la doctora pertenece a dos): cambia el logo, la paleta y
+  las pantallas disponibles — la clínica estética atiende por cita, sin cola.
 
-**Lo que está deliberadamente bloqueado:** Agenda, Recetas, Laboratorio,
-Reportes y Configuración. Al hacer clic explican que se construyen a la medida
-y llevan al formulario de contacto.
+**Qué no está en la demo:** las pantallas de Usuarios, Roles y Bitácora
+aparecen en el menú con candado. Existen en el sistema entregado, pero no se
+recorren aquí para no alargar el flujo.
 
-**Datos:** todos los pacientes son ficticios y viven en `js/data.js`. Las fechas
-se guardan como "hace N días" y se calculan al cargar la página, así que la demo
-siempre se ve actual sin tener que actualizar el archivo. Nada se guarda: al
-recargar, todo vuelve a su estado inicial.
+**Datos:** todo es ficticio —pacientes, personal, teléfonos, DUI y la dirección
+de la clínica—. Las fechas se guardan como "hace N días" y se calculan al
+cargar, así que la demo siempre se ve actual. Nada se guarda: al recargar,
+todo vuelve a su estado inicial.
 
 ---
 
 ## Antes de publicar
 
-Un par de datos son de relleno y conviene cambiarlos:
+- El catálogo trae dos tarjetas de relleno marcadas como `'pronto'` en
+  `assets/data/projects.js`. Reemplázalas con proyectos reales o bórralas.
+- La demo nombra a **Clínica ProSalud** como cliente. Pídele permiso a la
+  doctora antes de dejarlo público, aunque los datos de adentro sean
+  inventados.
 
-- El número de WhatsApp en `index.html` (`wa.me/50300000000`).
-- El correo de contacto, si quieres usar uno distinto al que está puesto.
-- Los datos de la doctora en `demos/expediente-clinico/js/data.js` (objeto
-  `MEDICO`): nombre, cédula, dirección y teléfono son ficticios a propósito.
-  Si vas a mostrar la demo como trabajo hecho para una clienta real, pídele
-  permiso antes de usar su nombre.
+---
 
 ## Publicar en línea
 

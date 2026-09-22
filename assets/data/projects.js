@@ -11,24 +11,24 @@
      estado    "demo"  -> tiene demo navegable
                "pronto" -> aún no hay demo publicada
      descripcion  2–3 líneas, orientadas a lo que el cliente gana
-     stack     tecnologías visibles en la demo
+     stack     tecnologías con las que se construyó el sistema real
      demo      ruta de la demo (null si todavía no existe)
      acento    color del mockup de la tarjeta
    ===================================================================== */
 
 const PROYECTOS = [
   {
-    id: 'expediente-clinico',
-    titulo: 'Expediente Clínico Digital',
-    cliente: 'Consultorio médico privado',
+    id: 'sistema-clinica',
+    titulo: 'Sistema de Gestión Clínica',
+    cliente: 'Clínica ProSalud',
     categoria: 'salud',
-    autoria: 'individual',
+    autoria: 'grupal',
     estado: 'demo',
     descripcion:
-      'Sustituye el folder de papel: historial, antecedentes, notas de consulta y recetas de cada paciente en una sola pantalla, con búsqueda inmediata.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
-    demo: 'demos/expediente-clinico/index.html',
-    acento: '#2a78d6'
+      'Digitaliza el ciclo completo de atención: se registra al paciente, enfermería toma sus signos vitales y lo manda a la cola del médico, el médico lo atiende y la receta cierra la consulta. Todo queda en su expediente, con permisos por puesto de trabajo.',
+    stack: ['Django', 'Python', 'PostgreSQL', 'Bootstrap 5', 'JavaScript'],
+    demo: 'demos/sistema-clinica/index.html',
+    acento: '#0F6E56'
   },
 
   /* ----------------------------------------------------------------
