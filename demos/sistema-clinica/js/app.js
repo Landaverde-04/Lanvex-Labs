@@ -262,7 +262,7 @@
       </div>
       <div class="modal__foot">
         <button class="btn" data-cerrar>Entendido</button>
-        <a class="btn btn--primary" href="../../index.html#contacto">Quiero un sistema así</a>
+        <a class="btn btn--primary" href="../../index.html#proyectos">Ver más proyectos</a>
       </div>`);
   }
 

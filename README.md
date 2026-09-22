@@ -1,9 +1,9 @@
-# Lanvex — Catálogo de sistemas
+# Lanvex — Galería de demos
 
-Sitio web de la marca **Lanvex** (Kevin Landaverde). Funciona como catálogo de
-los sistemas que he desarrollado: cada proyecto tiene una **demo navegable** que
-el cliente puede recorrer sin registrarse, para que vea cómo se siente el
-sistema antes de contratar.
+Sitio web de la marca **Lanvex** (Kevin Landaverde). Es una **galería de demos**
+de los sistemas que he desarrollado: cada proyecto tiene una demo navegable que
+se puede recorrer sin registro ni instalación, para que quien visite el
+portafolio vea el sistema funcionando en vez de leer una descripción.
 
 Todo está hecho con **HTML, CSS y JavaScript puros**. No hay compiladores, ni
 dependencias, ni servidor: basta abrir `index.html` en el navegador.
