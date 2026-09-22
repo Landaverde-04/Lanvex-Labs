@@ -18,6 +18,9 @@ assets/
   css/site.css                    Estilos del sitio
   js/site.js                      Menú, filtros del catálogo, animaciones
   data/projects.js                ← Lista de proyectos del catálogo
+  img/og-cover.png                Vista previa al compartir la portada
+  img/og-cover-clinica.png        Vista previa al compartir la demo
+  img/*.src.html                  Fuente editable de esas dos imágenes
 demos/
   sistema-clinica/                Demo 1: sistema de gestión clínica
     index.html
@@ -106,6 +109,28 @@ recorren aquí para no alargar el flujo.
 de la clínica—. Las fechas se guardan como "hace N días" y se calculan al
 cargar, así que la demo siempre se ve actual. Nada se guarda: al recargar,
 todo vuelve a su estado inicial.
+
+---
+
+## Vista previa al compartir el enlace
+
+Cuando pegas el enlace en LinkedIn o WhatsApp, la miniatura sale de la etiqueta
+`og:image` del `<head>`. Hay dos imágenes de 1200×630: una para la portada y
+otra para la demo de la clínica.
+
+Para regenerarlas después de editar su `.src.html`:
+
+```bash
+chrome --headless --window-size=1200,630   --screenshot=assets/img/og-cover.png   assets/img/og-cover.src.html
+```
+
+> ⚠️ `og:image` y `og:url` llevan la **URL absoluta** del sitio; los scrapers no
+> resuelven rutas relativas. Si algún día se muda a un dominio propio, hay que
+> cambiar el dominio en esas etiquetas, en `index.html` y en la demo.
+
+Para que LinkedIn deje de mostrar una miniatura vieja, pasa la URL por el
+[Post Inspector](https://www.linkedin.com/post-inspector/) y dale a *Inspect*:
+refresca su caché al instante.
 
 ---
 
